@@ -61,6 +61,7 @@ def qof(a, N, eps, shots):
     inverse_QFT_gate = QFT(t, inverse=True, name='  IQFT').to_gate()
     qc.append(inverse_QFT_gate, range(t))
 
+    print(qc)
     # Measure circuit
     qc.measure(range(t), range(t))
 

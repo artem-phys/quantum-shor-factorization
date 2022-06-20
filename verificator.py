@@ -14,10 +14,10 @@ with open('output.json') as fout:
 
     if p == 1 or q == 1:
         print('Factors are trivial')
-        print('Program is NOT OK')
+        print('Verification result: FAIL')
     elif N != p * q:
         print('N != p * q')
-        print('Program is NOT OK')
+        print('Verification result: FAIL')
     else:
         print(f'{N} == {p} * {q}')
-        print('Program is OK')
+        print('Verification result: PASS')
